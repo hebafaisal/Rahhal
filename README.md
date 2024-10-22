@@ -1,16 +1,4 @@
-# flutter_application_rahhal
+# Rahhal
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Who is Rahhal?
+Rahhal is an application for organizing trips, whether by air or land, allowing you to choose ready-made plans prepared by the team or arrange your own plan. It also helps you manage and analyze the trip budget using advanced statistical tools to improve financial control.
