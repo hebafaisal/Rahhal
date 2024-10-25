@@ -21,14 +21,13 @@ class SignUpState extends State<SignUp> {
     return Scaffold(
         backgroundColor: Colors.white,
         body: SizedBox(
-            width: double.infinity, //all the width عرض شاشه الكلي
-            //cus to obtine the all code in across and rhe
+            width: double.infinity, 
             child: Form(
               key: _formKey,
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment
-                      .center, // بجيبه فالمنتصف بس صار معي  حطيت السايز بوكس اللي جنب البودي وعطيتها انفنتي عشان العرص كله يكون في الحسبان
+                      .center, 
 
                   children: [
                     SizedBox(
@@ -38,26 +37,26 @@ class SignUpState extends State<SignUp> {
                     ),
 
                     Container(
-                        width: 300, // tool al morabi
+                        width: 300, 
                         margin: EdgeInsets.only(top: 30),
                         child: TextFormField(
                           textInputAction:
-                              TextInputAction.next, // ينتقل للي بعده
+                              TextInputAction.next, 
                           decoration: InputDecoration(
-                            labelText: "Username", // تروح كلمه الهنت فوق
+                            labelText: "Username", 
                             labelStyle: TextStyle(
                                 fontSize: 15,
-                                color: Color(0xFF638889)), // i want to use this
+                                color: Color(0xFF638889)), 
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(50)),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
                                   width: 2,
                                   color: Color(
-                                      0xFF638889)), // Custom color on focus
+                                      0xFF638889)), 
                               borderRadius: BorderRadius.circular(
-                                  50.0), // Circular border on focus
-                            ), //widget
+                                  50.0), 
+                            ), 
                             prefixIcon: Icon(Icons.person),
                             errorBorder: OutlineInputBorder(
                               borderSide:
@@ -68,10 +67,9 @@ class SignUpState extends State<SignUp> {
                               borderSide: const BorderSide(
                                   width: 2,
                                   color: Colors
-                                      .red), // Red border on focused error
+                                      .red), 
                               borderRadius: BorderRadius.circular(50.0),
                             ),
-                            // Default floating label style (color will change based on error state)
                             floatingLabelStyle:
                                 WidgetStateTextStyle.resolveWith((states) {
                               if (states.contains(MaterialState.error)) {
@@ -92,15 +90,14 @@ class SignUpState extends State<SignUp> {
                           ),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return 'Please enter the username'; // This triggers the error state
+                              return 'Please enter the username'; 
                             }
                             return null;
                           },
                         )),
 
                     Container(
-                      // alwayes take wid
-                      width: 300, // tool al morabi
+                      width: 300, 
                       margin: EdgeInsets.only(top: 15),
                       child: TextFormField(
                         textInputAction: TextInputAction.next,
@@ -108,26 +105,25 @@ class SignUpState extends State<SignUp> {
                           labelText: "Phone Number",
                           labelStyle: TextStyle(
                               fontSize: 15,
-                              color: Color(0xFF638889)), // i want to use this
+                              color: Color(0xFF638889)), 
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(50)),
                           focusedBorder: OutlineInputBorder(
                             borderSide: const BorderSide(
                                 width: 2,
                                 color:
-                                    Color(0xFF638889)), // Custom color on focus
+                                    Color(0xFF638889)), 
                             borderRadius: BorderRadius.circular(
-                                50.0), // Circular border on focus
-                          ), //widget
+                                50.0), 
+                          ), 
                           prefixIcon: Icon(Icons.phone),
-                          // Error style (for the error message)
                           errorStyle: const TextStyle(
-                            color: Colors.red, // Error text color
+                            color: Colors.red, 
                           ),
                         ),
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return 'Please enter the number'; // This triggers the error state
+                            return 'Please enter the number'; 
                           }
                           return null;
                         },
@@ -135,9 +131,7 @@ class SignUpState extends State<SignUp> {
                     ),
 
                     Container(
-
-                        // alwayes take wid
-                        width: 300, // tool al morabi
+                        width: 300, 
                         margin: EdgeInsets.only(top: 15),
                         child: TextFormField(
                           textInputAction: TextInputAction.next,
@@ -146,32 +140,31 @@ class SignUpState extends State<SignUp> {
                               labelStyle: TextStyle(
                                   fontSize: 15,
                                   color:
-                                      Color(0xFF638889)), // i want to use this
+                                      Color(0xFF638889)), 
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(50)),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: const BorderSide(
                                     width: 2,
                                     color: Color(
-                                        0xFF638889)), // Custom color on focus
+                                        0xFF638889)), 
                                 borderRadius: BorderRadius.circular(
-                                    50.0), // Circular border on focus
+                                    50.0), 
                               ), //widget
                               prefixIcon: Icon(Icons.email),
                               errorStyle: const TextStyle(
-                                color: Colors.red, // Error text color
+                                color: Colors.red, 
                               )),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return 'Please enter the email'; // This triggers the error state
+                              return 'Please enter the email'; 
                             }
                             return null;
                           },
                         )),
 
                     Container(
-                        // alwayes take wid
-                        width: 300, // tool al morabi
+                        width: 300, 
                         margin: EdgeInsets.only(top: 15),
                         child: TextFormField(
                           textInputAction: TextInputAction.next,
@@ -181,17 +174,17 @@ class SignUpState extends State<SignUp> {
                               labelStyle: TextStyle(
                                   fontSize: 15,
                                   color:
-                                      Color(0xFF638889)), // i want to use this
+                                      Color(0xFF638889)), 
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(50)),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: const BorderSide(
                                     width: 2,
                                     color: Color(
-                                        0xFF638889)), // Custom color on focus
+                                        0xFF638889)), 
                                 borderRadius: BorderRadius.circular(
                                     50.0), // Circular border on focus
-                              ), //widget
+                              ), 
                               prefixIcon: Icon(Icons.password),
                               suffixIcon: IconButton(
                                 icon: Icon(
@@ -210,15 +203,14 @@ class SignUpState extends State<SignUp> {
                               )),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return 'Please enter the password'; // This triggers the error state
+                              return 'Please enter the password'; 
                             }
                             return null;
                           },
                         )),
 
                     Container(
-                        // alwayes take wid
-                        width: 300, // tool al morabi
+                        width: 300, 
                         margin:
                             EdgeInsets.symmetric(vertical: 15, horizontal: 10),
                         child: TextFormField(
@@ -229,30 +221,30 @@ class SignUpState extends State<SignUp> {
                               labelStyle: TextStyle(
                                   fontSize: 15,
                                   color:
-                                      Color(0xFF638889)), // i want to use this
+                                      Color(0xFF638889)), 
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(50)),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: const BorderSide(
                                     width: 2,
                                     color: Color(
-                                        0xFF638889)), // Custom color on focus
+                                        0xFF638889)), 
                                 borderRadius: BorderRadius.circular(
-                                    50.0), // Circular border on focus
-                              ), //widget
+                                    50.0), 
+                              ), 
                               prefixIcon: Icon(Icons.password),
                               errorStyle: const TextStyle(
-                                color: Colors.red, // Error text color
+                                color: Colors.red, 
                               )),
                           validator: (value) {
                             if (value == null || value.isEmpty) {
-                              return 'Please enter the password'; // This triggers the error state
+                              return 'Please enter the password'; 
                             }
                             return null;
                           },
                         )),
                     SizedBox(height: 15),
-                    //SIGN UP BOTTON
+                    //SIGN UP BUTTON
                     ElevatedButton(
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {
@@ -320,7 +312,7 @@ class SignUpState extends State<SignUp> {
                         ),
                       ),
                     ),
-                  ] //big childern inside the col
+                  ] 
 
                   ),
             )));
