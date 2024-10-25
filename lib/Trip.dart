@@ -143,7 +143,7 @@ class Airplane extends StatelessWidget {
         body: Column(children: [
           Row(
               mainAxisAlignment: MainAxisAlignment
-                  .spaceBetween, // تحكمتلي فالفراغ اللي بالنص بين الود[ت اللي شايله الصور
+                  .spaceBetween, 
               children: [
                 RahaalCustomWidget().destinationCard(
                   imagePath: "images/mexico.png",
@@ -160,7 +160,6 @@ class Airplane extends StatelessWidget {
             height: 20,
           ),
           Row(
-            //father row 2 for third and fourth img
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               RahaalCustomWidget().destinationCard(
@@ -187,17 +186,15 @@ class Caravan extends StatelessWidget {
         body: Column(children: [
           SizedBox(height: 15),
           Row(
-              //father row of all
-              //there is outer the center
               mainAxisAlignment: MainAxisAlignment
-                  .spaceBetween, // تحكمتلي فالفراغ اللي بالنص بين الودكت اللي شايله الصور
+                  .spaceBetween, 
               children: [
-                Stack(// inside the father row
+                Stack(
                     children: [
                   // Image
                   ClipRRect(
                     borderRadius: BorderRadius.circular(
-                        30), // Adjust to change corner radius
+                        30), 
                     child: SizedBox(
                       width: 200,
                       height: 298,
@@ -207,21 +204,20 @@ class Caravan extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    bottom: 30, // Adjust based on your design
+                    bottom: 30, 
                     left: 16,
                     right: 16,
                     child: Container(
                       padding:
-                          EdgeInsets.all(8), // Padding inside the container
+                          EdgeInsets.all(8), 
                       decoration: BoxDecoration(
                         color: Colors.white
-                            .withOpacity(0.7), // rec background
+                            .withOpacity(0.7), 
                         borderRadius:
-                            BorderRadius.circular(15), // Rounded corners
+                            BorderRadius.circular(15), 
                       ),
                       child: Column(
                         children: [
-                          // Title
                           Text(
                             'Lebanon , Turkey , Georgia',
                             style: TextStyle(
