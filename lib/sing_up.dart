@@ -8,8 +8,8 @@ class SignUp extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.white,
         body: SizedBox(
-            width: double.infinity, //all the width عرض شاشه الكلي
-            //cus to obtine the all code in across and rhe
+            width: double.infinity, 
+            
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -22,52 +22,49 @@ class SignUp extends StatelessWidget {
                   ,),
                   Container(
                       
-                      width: 300, // tool al morabi
+                      width: 300, 
                       margin: EdgeInsets.only(top: 30),
                       child: TextField(
                         textInputAction: TextInputAction.next,
                         decoration: InputDecoration(
                             labelText: "Username",
                             labelStyle:
-                                TextStyle(fontSize: 15), // i want to use this
+                                TextStyle(fontSize: 15), 
                             border: OutlineInputBorder(
                                 borderRadius:
-                                    BorderRadius.circular(70)), //widget
+                                    BorderRadius.circular(70)), 
                             prefixIcon: Icon(Icons.person)),
                       )),
                   Container(
-                      // alwayes take wid
-                      width: 300, // tool al morabi
+                      width: 300, 
                       margin: EdgeInsets.only(top: 20),
                       child: TextField(
                         textInputAction: TextInputAction.next,
                         decoration: InputDecoration(
                             labelText: "Phone Number",
                             labelStyle:
-                                TextStyle(fontSize: 15), // i want to use this
+                                TextStyle(fontSize: 15), 
                             border: OutlineInputBorder(
                                 borderRadius:
-                                    BorderRadius.circular(70)), //widget
+                                    BorderRadius.circular(70)), 
                             prefixIcon: Icon(Icons.phone)),
                       )),
                   Container(
-                      // alwayes take wid
-                      width: 300, // tool al morabi
+                      width: 300, 
                       margin: EdgeInsets.only(top: 20),
                       child: TextField(
                         textInputAction: TextInputAction.next,
                         decoration: InputDecoration(
                             labelText: "Email",
                             labelStyle:
-                                TextStyle(fontSize: 15), // i want to use this
+                                TextStyle(fontSize: 15), 
                             border: OutlineInputBorder(
                                 borderRadius:
-                                    BorderRadius.circular(70)), //widget
+                                    BorderRadius.circular(70)), 
                             prefixIcon: Icon(Icons.email)),
                       )),
                   Container(
-                      // alwayes take wid
-                      width: 300, // tool al morabi
+                      width: 300, 
                       margin: EdgeInsets.only(top: 20),
                       child: TextField(
                         textInputAction: TextInputAction.next,
@@ -75,16 +72,15 @@ class SignUp extends StatelessWidget {
                         decoration: InputDecoration(
                             labelText: "Password",
                             labelStyle:
-                                TextStyle(fontSize: 15), // i want to use this
+                                TextStyle(fontSize: 15), 
                             border: OutlineInputBorder(
                                 borderRadius:
-                                    BorderRadius.circular(70)), //widget
+                                    BorderRadius.circular(70)), 
                             prefixIcon: Icon(Icons.password),
                             suffixIcon: Icon(Icons.visibility_off)),
                       )),
                   Container(
-                      // alwayes take wid
-                      width: 300, // tool al morabi
+                      width: 300, 
                       margin:
                           EdgeInsets.symmetric(vertical: 20, horizontal: 10),
                       child: TextField(
@@ -93,9 +89,9 @@ class SignUp extends StatelessWidget {
                         decoration: InputDecoration(
                           labelText: "Confirm Password",
                           labelStyle:
-                              TextStyle(fontSize: 15), // i want to use this
+                              TextStyle(fontSize: 15), 
                           border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(70)), //widget
+                              borderRadius: BorderRadius.circular(70)), 
                           prefixIcon: Icon(Icons.password),
                         ),
                       )),
@@ -138,7 +134,7 @@ class SignUp extends StatelessWidget {
                       "Already have an account? ",
                       style: TextStyle(
                         fontSize: 16,
-                        color: const Color.fromARGB(255, 100, 94, 94), // Black color for this part
+                        color: const Color.fromARGB(255, 100, 94, 94), 
                       ),
                     ),
                     Text(
@@ -148,10 +144,10 @@ class SignUp extends StatelessWidget {
                         color: Color(0xFF638889),
                       ),
                     ),
-                   ] // cholfern inside the row
+                   ] 
                   )
                 
-                ]  //big childern inside the col
+                ]  
                 
                 )
                 
